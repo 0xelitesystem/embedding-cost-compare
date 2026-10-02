@@ -35,6 +35,13 @@ Get a sorted cost matrix showing:
 
 Self-hosted entries show $0 token cost. Add your own GPU/inference cost on top to compare apples to apples.
 
+## Use
+
+1. Enter the number of documents and the average tokens per document.
+2. Pick a re-embed frequency: one-time, quarterly, monthly, weekly or daily.
+3. Enter search queries per month and the average tokens per query.
+4. Read the cost matrix, sorted by cost. It updates as you type.
+
 ## Why this exists
 
 Picking an embedding provider for RAG is a decision you make once and pay for forever. Pricing is fragmented across docs, dimensions vary, and re-indexing costs can dominate query costs depending on how often your corpus changes. Most cost comparison content online is stale within a quarter.
@@ -52,6 +59,19 @@ This estimator is a single static file so it loads instantly, runs locally, and 
 - Scoping a RAG project: "is this affordable at our corpus size?"
 - Provider switch analysis: "what would we save moving from X to Y?"
 - Architecture review: "is daily re-embedding the right cadence?"
+
+## Privacy
+
+Everything runs in your browser. The numbers you enter stay on your machine; the page makes no API calls and no network requests, and the prices are embedded in the file. If you use the theme toggle, your light or dark choice is saved in your browser's localStorage under the key `theme`. Nothing you paste or type is stored.
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/embedding-cost-estimator
+cd embedding-cost-estimator
+```
+
+Open `index.html` in a browser. Or serve the folder with `python -m http.server` and visit http://localhost:8000.
 
 ## Build
 
