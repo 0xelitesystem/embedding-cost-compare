@@ -1,8 +1,8 @@
-# embedding-cost-estimator
+# embedding-cost-compare
 
 Estimate embedding costs across 11 providers before you commit to a RAG strategy.
 
-**Live demo:** https://0xelitesystem.github.io/embedding-cost-estimator/
+**Live demo:** https://0xelitesystem.github.io/embedding-cost-compare/
 
 Browser-only, single HTML file. No API calls, no telemetry, no upload.
 
@@ -67,8 +67,8 @@ Everything runs in your browser. The numbers you enter stay on your machine; the
 ## Run locally
 
 ```
-git clone https://github.com/0xelitesystem/embedding-cost-estimator
-cd embedding-cost-estimator
+git clone https://github.com/0xelitesystem/embedding-cost-compare
+cd embedding-cost-compare
 ```
 
 Open `index.html` in a browser. Or serve the folder with `python -m http.server` and visit http://localhost:8000.
