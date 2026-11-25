@@ -89,5 +89,5 @@ MIT.
 
 - [llm-provider-price-json](https://github.com/0xelitesystem/llm-provider-price-json): inference cost data
 - [prompt-cost-across-models](https://github.com/0xelitesystem/prompt-cost-across-models): per-call cost estimator
-- [rag-chunk-visualizer](https://github.com/0xelitesystem/rag-chunk-visualizer): visualize chunking strategies
+- [chunking-strategy-compare](https://github.com/0xelitesystem/chunking-strategy-compare): visualize chunking strategies
 - [rag-evaluation-rubrics](https://github.com/0xelitesystem/rag-evaluation-rubrics): how to measure RAG quality
